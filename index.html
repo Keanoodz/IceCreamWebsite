@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div id="loginForm" class="form-container">
+      <h2>Login</h2>
+      <form id="login">
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" id="registerLink">Register here</a></p>
+    </div>
+
+    <!-- Register Form -->
+    <div id="registerForm" class="form-container" style="display: none;">
+      <h2>Register</h2>
+      <form id="register">
+        <input type="text" id="registerUsername" placeholder="Username" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="#" id="loginLink">Login here</a></p>
+    </div>
+
+    <!-- Welcome Page with Ice Cream Shops -->
+    <div id="welcomePage" class="form-container" style="display: none;">
+      <h2>Welcome to the Website</h2>
+      <p>You're logged in!</p>
+      
+      <!-- Buttons for additional functionality -->
+      <div class="buttons">
+        <button id="viewIceCreamShopsBtn">View Ice Cream Shops</button>
+        <button id="specialOffersBtn">Special Offers</button>
+        <button id="contactUsBtn">Contact Us</button>
+        <button id="aboutUsBtn">About Us</button>
+      </div>
+
+      <!-- Ice Cream Shop List (Initially hidden) -->
+      <div id="iceCreamShops" style="display: none;">
+        <h3>Ice Cream Shops in Belgium</h3>
+        <ul>
+          <li>
+            <strong>Mario's Ijs</strong><br>
+            Location: Maasmechelen<br>
+            Opening Hours:<br>
+            Monday - Friday: 10:00 AM - 8:00 PM<br>
+            Saturday - Sunday: 11:00 AM - 9:00 PM
+          </li>
+          <li>
+            <strong>De IJsco Fabriek</strong><br>
+            Location: Dilsen-Stokkem<br>
+            Opening Hours:<br>
+            Monday - Friday: 9:30 AM - 7:00 PM<br>
+            Saturday: 10:00 AM - 8:00 PM<br>
+            Sunday: Closed
+          </li>
+          <li>
+            <strong>IJssalon Van Eyck</strong><br>
+            Location: Dilsen-Stokkem<br>
+            Opening Hours:<br>
+            Monday - Thursday: 10:00 AM - 7:00 PM<br>
+            Friday - Sunday: 11:00 AM - 9:00 PM
+          </li>
+        </ul>
+      </div>
+
+      <!-- Special Offers Section (Initially hidden) -->
+      <div id="specialOffers" style="display: none;">
+        <h3>Special Offers</h3>
+        <p>Enjoy a 10% discount on all ice cream when you order online!</p>
+      </div>
+
+      <!-- Contact Us Section (Initially hidden) -->
+      <div id="contactUs" style="display: none;">
+        <h3>Contact Us</h3>
+        <p>Email us at: <a href="mailto:info@icecreamshop.com">info@icecreamshop.com</a></p>
+        <p>Call us: +32 123 456 789</p>
+      </div>
+
+      <!-- About Us Section (Initially hidden) -->
+      <div id="aboutUs" style="display: none;">
+        <h3>About Us</h3>
+        <p>We are passionate about bringing the best ice cream in Belgium to you. Our mission is to create the most delicious and high-quality ice cream for everyone to enjoy!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
